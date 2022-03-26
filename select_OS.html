@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+
+.link {
+  font-family: Arial;
+  color: white;
+  text-decoration: none;
+}
+
+a.link:hover
+{
+	font-size:120%;
+}
+
+.columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1,.column2,.column3 {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+}
+
+.column1 {
+  left: 0;
+  float: left;
+  background-color: #333;
+}
+
+.column2 {
+  left: 33%;
+  right: 66%;
+  background-color: #444;
+}
+
+.column3 {
+  right: 0;
+  float: right;
+  background-color: #555;
+}
+
+.centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 250px;
+  border-radius: 20%;
+}
+
+</style>
+</head>
+
+<body>
+<div class="columns">
+  <div class="column1">
+  	<div class="centered">
+        <a href="http://copy.sh/v86/" class="link" ><img src="os.jpeg" alt="Avatar man" class="link"><h1>Get OS</h1></a>
+    </div>
+  </div>
+
+  <div class="column2">
+  	<div class="centered">
+    	<a href="docstore.php" class="link"><img src="docstore.jpeg" alt="Avatar man" class="link"><h1>DocStore</h1></a>
+  	</div>
+  </div>
+
+  <div class="column3">
+  	<div class="centered">
+   		<a href="texteditor.php" class="link"><img src="textpad1.jpeg" alt="Avatar man" class="link"><h1>TextPad</h1></a>
+  	</div>
+  </div>
+</div>
+</body>
+</html>

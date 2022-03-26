@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact Us</title>
+    <link rel="stylesheet" href="css/contact-page.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="topbar-shim">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFV46RC" height="0" width="0"
+                        style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <nav class="web-topbar">
+            <!-- views/partials/website_header.ejs -->
+            <div class="topbar-wrapper">
+                <nav class="topbar-left-container col-xs-4 col-sm-9 ">
+                    <ul>
+
+                        <li>
+                            <a class="menu-item logo-item" href="index.html">
+                                <picture>
+                                    <source type="image/gif/png" srcset="/images/VSN Logo.gif">
+                                    <source type="gif" srcset="/images/VSN Logo.gif">
+                                    <img src="images/VSN Logo.jpeg" alt="Virtual Study Network">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="howitworks.html">How it Works?</a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="aboutus.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="topbar-right-container hidden-xs col-xs-8 col-sm-3 full-screen-menu-nav">
+                    <ul>
+                        <li>
+                            <a id="topbar-signup" class="menu-item-highlight" href="signup.html">SIGN UP</a>
+                        </li>
+
+
+                        <li>
+                            <a id="topbar-login" class="menu-item-highlight" href="login.php">Login</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="menu-mobile hidden-sm hidden-md hidden-lg is--open">
+                    <span id="burger-menu-hook" class="burger-menu-container">
+                                <img src="https://tako.assets.yotako.io/images/website/icons/icon-burger-menu.png"
+                                    alt="Menu">
+                            </span>
+                    <div class="wrapper-menu-container">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a id="topbar-mobile-signup" class="menu-item-highlight" href="signup.html">SIGN UP</a>
+                                </li>
+
+                                <li>
+                                    <a id="topbar-mobile-login" class="menu-item-highlight" href="login.php">Login</a>
+                                </li>
+
+                                <li>
+                                    <a class="menu-item" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="howitworks.html">How it Works?</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="aboutus.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Header Ends Here-->
+
+
+    <div class="parallax texture" id="parallax-cta" style="background-image:url(images/4.jpeg);"></div>
+    <!-- contact-form -->
+    <div class="container form">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <h2>Tell us About Yourself</h2>
+                        <p style="color: #000">Contact us today to discuss!</p>
+                    </div>
+                </div>
+                <form name="contactForm" id="contactForm" method="POST" action="">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="control-group">
+                                <label>First Name</label>
+                                <input type="text" class="demo-default form-control" placeholder="First Name">
+                            </div>
+                            <div class="control-group">
+                                <label>Last Name</label>
+                                <input type="text" class="demo-default form-control" placeholder="Last Name">
+                            </div>
+                            <div class="control-group">
+                                <label>Company/Institute</label>
+                                <input type="text" class="demo-default form-control" placeholder="Company">
+                            </div>
+                            <div class="control-group">
+                                <label>Phone #</label>
+                                <input type="text" class="demo-default form-control" placeholder="Phone #">
+                            </div>
+                            <div class="control-group">
+                                <label>Email</label>
+                                <input type="text" class="demo-default form-control" placeholder="yourname@domain.com">
+                            </div>
+                            <div class="control-group">
+                                <label for="select-beast">I'm Interested In:</label>
+                                <select id="select-beast" class="demo-default" placeholder="Select a service...">
+
+                      <option value="4">Virtual Machine</option>
+                      <option value="1">Document Storing</option>
+                      <option value="3">Security</option>
+                      <option value="5">Others</option>
+                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-md-7 text-center">
+                            <input type="submit" class="btn btn-primary" value="Contact Us">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-5 contact-right-info">
+                <h2>ORLANDO OFFICE</h2>
+                <p style="color: #000000">123 Open Door Road Suite 1200<br /> Orlando, FL 30030<br />
+                    <a href="tel:4078981961">407.555.1961</a>
+                </p>
+                <h2>EMAIL ADDRESS</h2>
+                <a href="mailto:developer@vsn.com">info@vsn.com</a>
+                <h2>SUPPORT</h2>
+                <a href="tel:8005551656">800.555.1656</a><br />
+                <a href="mailto:support@vsn.com">support@vsn.com</a>
+            </div>
+        </div>
+    </div>
+    <!--Footer Starts Here-->
+    <footer class="web-footer">
+        <div class="wrapper-container-lg footer-content-container">
+            <div class="menu-section">
+                <ul class="footer-item">
+                    <li><span><a href="/">Virtual Study Network</a></span></li>
+                    <li>
+                        <ul class="social-container">
+                            <li>
+                                <a id="twitter-footer-icon" target="_blank" href="https://twitter.com/yotako_io">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="facebook-footer-icon" target="_blank" href="https://www.facebook.com/shreekunj.variya/">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="linkedin-footer-icon" target="_blank" href="https://www.linkedin.com/in/shreekunj-varia/">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <br>
+                        <div>
+                            <form action="#" id="newsletter-footer-form">
+                                <div id="newsletter-footer-container">
+                                    <input required="" id="newsletter-footer-input" class="text-input" type="email" name="newsletter-input" placeholder="Email address">
+                                    <button id="newsletter-footer-submit" type="submit" class="primary-button">Subscribe</button>
+                                </div>
+                                <div id="newsletter-footer-success" class="is--hidden">
+                                    <p><i class="fa fa-check" aria-hidden="true"></i> Successfully subscribed.</p>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>Product</span></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/freehand-canvas">Freehand</a></li>
+                    <li><a href="/features">Features</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>Resources</span></li>
+                    <li><a href="/documentation">Documentation</a></li>
+                    <li><a target="_blank" href="https://www.blog.yotako.io">Blog</a></li>
+                    <li><a href="/faq">F.A.Q.</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>About</span></li>
+                    <li><a href="/company">Company &amp; Careers</a></li>
+                    <li><a href="/terms-of-services">Terms of Services</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>Contact Us</span></li>
+                    <li><a href="/contact">Contact VSN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper-container-lg footer-bottom-container">
+            <div class="copyright"><span>©</span> <b>Virtual Study Network </b>2021</div>
+        </div>
+    </footer>
+</body>
+
+</html>
