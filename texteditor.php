@@ -31,3 +31,4 @@ if(isset($_POST['submit'])){
 <script>
   CKEDITOR.replace('editor')
 </script>
+

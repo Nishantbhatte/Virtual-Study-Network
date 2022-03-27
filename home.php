@@ -1,6 +1,6 @@
 <?php
    session_start();
-   include "db_conn.php";
+   include "db/db_conn.php";
    if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
       	<?php if ($_SESSION['role'] == 'admin') {?>
       		<!-- For Admin -->
       		<div class="card" style="width: 18rem;">
-			  <img src="img/admin-default.png"
+			  <img src="_images/_img/admin-default.png"
 			       class="card-img-top"
 			       alt="admin image">
 			  <div class="card-body text-center">
@@ -58,7 +58,7 @@
       	<?php }else { ?>
       		<!-- FORE USERS -->
       		<div class="card" style="width: 18rem;">
-			  <img src="img/user-default.png"
+			  <img src="_images/_img/user-default.png"
 			       class="card-img-top"
 			       alt="admin image">
 			  <div class="card-body text-center">
