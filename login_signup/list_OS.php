@@ -55,7 +55,7 @@ if ($email != false && $password != false) {
 
 <body>
     <nav class="navbar">
-        <a class="menu-item logo-item" href="index.html">
+        <a class="menu-item logo-item" href="../index.html">
             <picture>
                 <source type="image/png" srcset="../_images/VSN Logo.jpeg">
                 <source type="gif" srcset="../_images/VSN Logo.jpeg">

@@ -1,25 +1,13 @@
-# How to Make Multi User Role Based Login Form in PHP and MySQL
+# How to Login to system
 
-version: 1.0.0
+1. Register With Email ID
+2. Verify that Email ID by OTP
+3. Login with your Credentials
 
-### UserName : elias
+# Registered Users
+    variyashreekunj@gmail.com
+    123456
 
-### Password : 1234
+    shreekunjvariya@gmail.com
+    12345678
 
-### UserType : Admin
-
-### ---------------------------------
-
-### UserName : john
-
-### Password : abcd
-
-### UserType : user
-
-## Full Tutorial
-
-[On Youtube](https://youtu.be/-8q3GLkr9Ts)
-
-## Authors
-
-[Elias Abdurrahman](https://github.com/codingWithElias)
