@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
     }
 }
 ?>
-<script src="ckeditor/ckeditor.js"></script>
+<script src="../ckeditor/ckeditor.js"></script>
 <form  method="post">
   <textarea id="editor" name="editor">
   </textarea>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+nav {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    background: #6665ee;
+    font-family: sans-serif;
+}
+
+nav a.navbar-brand {
+    color: #fff;
+    font-size: 30px !important;
+    font-weight: 500;
+}
+
+
+button a {
+    color: #6665ee;
+    font-weight: 500;
+}
+
+button a:hover {
+    text-decoration: none;
+}
+
+.logo-item {
+    font-size: 25px
+}
+
+a.menu-item {
+    height: 60px;
+    color: #000000;
+}
+
+.menu-item-highlight:hover {
+    background: #31e249
+}
+
+.logo-item img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    max-height: 100%
+}
+
+.login-name h1{
+    text-align: center;
+    color: green;
+    font-style: bold;
+}
+
+h3 {
+    color: #ebf8e1;
+    font-style:oblique ;
+}
+
+
+.link {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a.link:hover {
+    font-size: 120%;
+}
+
+.image-size {
+    width: 233px;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.columns {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.column1 {
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #333;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.column2 {
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #444;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.column3 {
+    padding: 8px 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #555;
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+/* ListOS.html Style from HERE */
+
+ol {
+    counter-reset: li; 
+    list-style: none; 
+    padding:5% 30%;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+
+ol a {
+    position: relative;
+    display: block;
+    padding: 1.2em 1em 1.2em 6em;
+    margin: .4em 0;
+    background: #DAD2CA;
+    text-align: left;
+    background-color:;
+    text-decoration: none;
+    border-radius: .4em;
+    transition: .3s ease-out;
+  }
+
+ol a:hover { background: #E9E4E0; }
+ol a:hover:before { transform: rotate(0deg); }
+ol a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    margin-top: -1.5em;
+    background: #f9dd94;
+    height: 2.5em;
+    width: 3em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}

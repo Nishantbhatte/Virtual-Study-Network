@@ -1,3 +1,27 @@
+<?php require_once "controllerUserData.php"; ?>
+<?php
+$email = $_SESSION['email'];
+$password = $_SESSION['password'];
+if ($email != false && $password != false) {
+    $sql = "SELECT * FROM usertable WHERE email = '$email'";
+    $run_Sql = mysqli_query($con, $sql);
+    if ($run_Sql) {
+        $fetch_info = mysqli_fetch_assoc($run_Sql);
+        $status = $fetch_info['status'];
+        $code = $fetch_info['code'];
+        if ($status == "verified") {
+            if ($code != 0) {
+                header('Location: reset-code.php');
+            }
+        } else {
+            header('Location: user-otp.php');
+        }
+    }
+} else {
+    header('Location: login-user.php');
+}
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -10,69 +34,40 @@
         access online Operating System, designer, developer, tool, software, javascript, frontend, UI, design, scaffolding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="_images/_icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="../_images/_icons/favicon.ico" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../_vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../_fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="../_vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="../_vendor/css-hamburgers/hamburgers.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../_vendor/select2/select2.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_css/util.css">
-    <link rel="stylesheet" type="text/css" href="_css/main.css">
-    <link rel="stylesheet" type="text/css" href="_css/login.css">
+    <link rel="stylesheet" type="text/css" href="../_css/util.css">
+    <link rel="stylesheet" type="text/css" href="../_css/main.css">
+    <link rel="stylesheet" type="text/css" href="../_css/login.css">
     <!--===============================================================================================-->
-<style>
-        
-	ol {
-  		counter-reset: li; 
-  		list-style: none; 
-  		padding:5% 30%;
-  		text-shadow: 0 1px 0 rgba(255,255,255,.5);
-		}
-
-	ol a {
-  		position: relative;
-  		display: block;
-  		padding: 1.2em 1em 1.2em 6em;
-  		margin: .4em 0;
-  		background: #DAD2CA;
-  		text-align: left;
-  		background-color:;
-  		text-decoration: none;
-  		border-radius: .4em;
-  		transition: .3s ease-out;
-		}
-
-	ol a:hover { background: #E9E4E0; }
-	ol a:hover:before { transform: rotate(0deg); }
-	ol a:before {
-  		content: counter(li);
-  		counter-increment: li;
-  		position: absolute;
-  		left: 1em;
-  		top: 50%;
-  		margin-top: -1.5em;
-  		background: #f9dd94;
-  		height: 2.5em;
-  		width: 3em;
-  		line-height: 2em;
-  		border: .3em solid #fff;
-  		text-align: center;
-  		font-weight: bold;
-  		border-radius: 2em;
-  		transition: all .3s ease-out;
-	}
-    
-</style>
+    <link rel="stylesheet" href="style_home.css">
 </head>
 
 <body>
-
+    <nav class="navbar">
+        <a class="menu-item logo-item" href="index.html">
+            <picture>
+                <source type="image/png" srcset="../_images/VSN Logo.jpeg">
+                <source type="gif" srcset="../_images/VSN Logo.jpeg">
+                <img src="../_images/VSN Logo.jpeg" alt="Virtual Study Network">
+            </picture>
+        </a>
+        <!-- <a class="navbar-brand" href="#">Brand name</a> -->
+        <div class="login-name">
+            <h1>Welcome <?php echo $fetch_info['name'] ?></h1>
+        </div>
+        <button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
+    </nav>
 <ol>
 	<li class=""><a href="http://localhost:8888" target="_blank"> Windows</a></li>
     <li class=""><a href="http://localhost:8888" target="_blank">Ubuntu</a></li>
@@ -92,7 +87,7 @@
                 <li>
                     <ul class="social-container">
                         <li>
-                            <a id="twitter-footer-icon" target="_blank" href="https://twitter.com/yotako_io">
+                            <a id="twitter-footer-icon" target="_blank" href="">
                                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                             </a>
                         </li>

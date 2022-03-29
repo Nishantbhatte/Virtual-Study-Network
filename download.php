@@ -1,6 +1,6 @@
 <?php
 
-include 'config.php';
+include '../db/config.php';
 
 $id_1 = $_GET['id_1']; // Get id from url bar
 
@@ -20,7 +20,7 @@ if (!$id_1) {
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>File Upload </title>
+	<title>Download Upload </title>
 </head>
 <body>
 	<div class="file__upload">
