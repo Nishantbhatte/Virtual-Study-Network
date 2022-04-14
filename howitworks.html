@@ -6,28 +6,20 @@
     <meta name="title" content="VSN | Virtual  Study  Network">
     <meta name="description" content="Get  Your  Own  Virtual  Instance as per your Requirement">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Virtual Lab, Virtaul Machines, E-learning, 
-        online computer, browser virtual machine, Aws, Amazon Virtual Images, Operating System,
-        Operating System Images, web app, application, web development, app development, code, create Instance,
-        access online Operating System, designer, developer, tool, software, javascript, frontend, UI, design, scaffolding">
+    <meta name="keywords" content="Virtual Lab, Virtaul Machines, E-learning, online computer, browser virtual machine,
+            Aws, Amazon Virtual Images, Operating System, Operating System Images, web app, application,
+            web development, app development, code, create Instance, access online Operating System, designer,
+            developer, tool, software, javascript, frontend, UI, design, scaffolding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
+
+    <!-- Title ICON -->
     <link rel="icon" type="image/png" href="_images/_icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_css/util.css">
-    <link rel="stylesheet" type="text/css" href="_css/main.css">
-    <link rel="stylesheet" type="text/css" href="_css/login.css">
-    <!--===============================================================================================-->
+
+    <!-- Importing All Stylesheet from One File -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Javascript file for Closing and Opening Burger menu  -->
+    <script type="module" src="js/main.js"></script>
 
     <title> How It Works </title>
 </head>
@@ -37,11 +29,10 @@
     <div class="topbar-shim">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFV46RC" height="0" width="0"
-                            style="display:none;visibility:hidden"></iframe></noscript>
+                style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
         <nav class="web-topbar">
-            <!-- views/partials/website_header.ejs -->
             <div class="topbar-wrapper">
                 <nav class="topbar-left-container col-xs-4 col-sm-9 ">
                     <ul>
@@ -49,8 +40,6 @@
                             <!--Logo Part-->
                             <a class="menu-item logo-item" href="index.html">
                                 <picture>
-                                    <source type="image/png" srcset="/images/VSN Logo.gif">
-                                    <source type="gif" srcset="/images/VSN Logo.gif">
                                     <img src="_images/VSN Logo.jpeg" alt="Virtual Study Network">
                                 </picture>
                             </a>
@@ -73,39 +62,43 @@
                 <nav class="topbar-right-container hidden-xs col-xs-8 col-sm-3 full-screen-menu-nav">
                     <ul>
                         <li>
-                            <a id="topbar-signup" class="menu-item-highlight" href="login_signup/signup-user.php">SIGN UP</a>
+                            <a id="topbar-signup" class="menu-item-highlight" href="login_signup/signup-user.php">SIGN
+                                UP</a>
                         </li>
                         <li>
-                            <a id="topbar-login" class="menu-item-highlight" href="login_signup/login-user.php">LOGIN</a>
+                            <a id="topbar-login" class="menu-item-highlight"
+                                href="login_signup/login-user.php">LOGIN</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="menu-mobile hidden-sm hidden-md hidden-lg is--open">
-
+                <!-- Mobile Navigation Part -->
+                <div class="menu-mobile hidden-sm hidden-md hidden-lg">
                     <!-- Mobile Menu Open Hide Button -->
                     <span id="burger-menu-hook" class="burger-menu-container">
-                            <img src="https://tako.assets.yotako.io/images/website/icons/icon-burger-menu.png" alt="Menu">
-                        </span>
+                        <img src="_images/icon-burger-menu.png" alt="Menu">
+                    </span>
                     <div class="wrapper-menu-container">
                         <nav>
                             <ul>
                                 <li>
-                                    <a id="topbar-mobile-signup" class="menu-item-highlight" href="login_signup/signup-user.php">SIGN UP</a>
+                                    <a id="topbar-mobile-signup" class="menu-item-highlight"
+                                        href="login_signup/signup-user.php">SIGN UP</a>
                                 </li>
                                 <li>
-                                    <a id="topbar-mobile-login" class="menu-item-highlight" href="login_signup/login-user.php">LOGIN</a>
+                                    <a id="topbar-mobile-login" class="menu-item-highlight"
+                                        href="login_signup/login-user.php">Login</a>
                                 </li>
                                 <li>
-                                    <a class="menu-item" href="/index.html">HOME</a>
+                                    <a class="menu-item" href="/index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a class="menu-item" href="/howitworks.html">HOW IT WORKS?</a>
+                                    <a class="menu-item" href="/howitworks.html">How it Works?</a>
                                 </li>
                                 <li>
-                                    <a class="menu-item" href="/aboutus.html">ABOUT US</a>
+                                    <a class="menu-item" href="/aboutus.html">About Us</a>
                                 </li>
                                 <li>
-                                    <a class="menu-item" href="/contactus.html">CONTACT US</a>
+                                    <a class="menu-item" href="/contactus.html">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -133,12 +126,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a id="facebook-footer-icon" target="_blank" href="https://www.facebook.com/shreekunj.variya/">
+                                <a id="facebook-footer-icon" target="_blank"
+                                    href="https://www.facebook.com/shreekunj.variya/">
                                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a id="linkedin-footer-icon" target="_blank" href="https://www.linkedin.com/in/shreekunj-varia/">
+                                <a id="linkedin-footer-icon" target="_blank"
+                                    href="https://www.linkedin.com/in/shreekunj-varia/">
                                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
                             </li>
