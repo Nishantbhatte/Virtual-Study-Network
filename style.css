@@ -1,0 +1,14 @@
+ /* Font Awesome Css File  */
+@import url("_fonts/font-awesome-4.7.0/css/font-awesome.min.css");
+/* Boostrap Css Classes */
+@import url("_vendor/bootstrap/css/bootstrap.min.css");
+@import url("_vendor/animate/animate.css");
+/* Hamburger Menu CSS */
+@import url("_vendor/css-hamburgers/hamburgers.min.css");
+@import url("_vendor/select2/select2.min.css");
+/* Home Page, Header, Section, Footer all Styles in main.css file */
+@import url("_css/main.css");
+
+/* UTIL.css file  */
+@import url("_css/util.css");
+

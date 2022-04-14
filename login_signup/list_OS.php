@@ -23,8 +23,9 @@ if ($email != false && $password != false) {
 ?>
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="title" content="VSN | Virtual  Study  Network">
     <meta name="description" content="Get  Your  Own  Virtual  Instance as per your Requirement">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,65 +69,66 @@ if ($email != false && $password != false) {
         </div>
         <button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
     </nav>
-<ol>
-	<li class=""><a href="http://localhost:8888" target="_blank"> Windows</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">Ubuntu</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">RedHat</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">SUSE Linux</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">Fedora</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">Kali</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">Parrot</a></li>
-    <li class=""><a href="http://localhost:8888" target="_blank">CentOS</a></li>
-</ol>
+    <ol class="list-color">
+        <li class=""><a href="http://localhost:8888/?Connect-to-Windows-instance" target="_blank"> Windows</a></li>
+        <li class=""><a href="http://localhost:8888/?Ubuntu-Instance" target="_blank">Ubuntu</a></li>
+        <li class=""><a href="http://localhost:8888" target="_blank">RedHat</a></li>
+        <li class=""><a href="http://localhost:8888" target="_blank">SUSE Linux</a></li>
+        <li class=""><a href="http://localhost:8888" target="_blank">Fedora</a></li>
+        <li class=""><a href="http://localhost:8888" target="_blank">Kali</a></li>
+        <li class=""><a href="http://localhost:8888" target="_blank">Parrot</a></li>
+        <li class=""><a href="http://localhost:8888" target="_blank">CentOS</a></li>
+    </ol>
     <!--Footer Starts Here-->
-   <footer class="web-footer">
-    <div class="wrapper-container-lg footer-content-container">
-        <div class="menu-section">
-            <ul class="footer-item">
-                <li><span><a href="/">Virtual Study Network</a></span></li>
-                <li>
-                    <ul class="social-container">
-                        <li>
-                            <a id="twitter-footer-icon" target="_blank" href="">
-                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="facebook-footer-icon" target="_blank" href="https://www.facebook.com/shreekunj.variya/">
-                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a id="linkedin-footer-icon" target="_blank" href="https://www.linkedin.com/in/shreekunj-varia/">
-                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="footer-item">
-                <li><span>Resources</span></li>
-                <li><a href="aboutus.html">Features</a></li>
-                <li><a href="howitworks.html">Documentation</a></li>
-                <li><a target="_blank" href="">Blog</a></li>
-                <li><a href="">F.A.Q.</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><span>About</span></li>
-                <li><a href="/company">Company &amp; Careers</a></li>
-                <li><a href="/terms-of-services">Terms of Services</a></li>
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-            </ul>
-            <ul class="footer-item">
-                <li><span>Contact Us</span></li>
-                <li><a href="/contactus.html">Contact VSN</a></li>
-            </ul>
+    <footer class="web-footer">
+        <div class="wrapper-container-lg footer-content-container">
+            <div class="menu-section">
+                <ul class="footer-item">
+                    <li><span><a href="/">Virtual Study Network</a></span></li>
+                    <li>
+                        <ul class="social-container">
+                            <li>
+                                <a id="twitter-footer-icon" target="_blank" href="">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="facebook-footer-icon" target="_blank" href="https://www.facebook.com/shreekunj.variya/">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="linkedin-footer-icon" target="_blank" href="https://www.linkedin.com/in/shreekunj-varia/">
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>Resources</span></li>
+                    <li><a href="aboutus.html">Features</a></li>
+                    <li><a href="howitworks.html">Documentation</a></li>
+                    <li><a target="_blank" href="">Blog</a></li>
+                    <li><a href="">F.A.Q.</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>About</span></li>
+                    <li><a href="/company">Company &amp; Careers</a></li>
+                    <li><a href="/terms-of-services">Terms of Services</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+                <ul class="footer-item">
+                    <li><span>Contact Us</span></li>
+                    <li><a href="/contactus.html">Contact VSN</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="wrapper-container-lg footer-bottom-container">
-        <div class="copyright"><span>©</span> <strong>Virtual Study Network </strong>2021</div>
-    </div>
-</footer>
-<!-- Footer Ends Here-->
+        <div class="wrapper-container-lg footer-bottom-container">
+            <div class="copyright"><span>©</span> <strong>Virtual Study Network </strong>2021</div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here-->
 </body>
+
 </html>

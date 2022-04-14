@@ -42,9 +42,10 @@ a.menu-item {
 
 .login-name h1 {
     text-align: center;
-    color: green;
+    color: #E9E4E0;
     font-style: bold;
 }
+
 
 h3 {
     color: #ebf8e1;
@@ -117,10 +118,11 @@ ol a {
     margin: .4em 0;
     background: #DAD2CA;
     text-align: left;
-    background-color: ;
+    background-color: lightblue;
     text-decoration: none;
     border-radius: .4em;
     transition: .3s ease-out;
+    color: blue;
 }
 
 ol a:hover {

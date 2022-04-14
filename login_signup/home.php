@@ -45,13 +45,14 @@ if ($email != false && $password != false) {
     <link rel="stylesheet" type="text/css" href="../_css/util.css">
     <link rel="stylesheet" type="text/css" href="../_css/main.css">
     <link rel="stylesheet" type="text/css" href="../_css/login.css">
+    <link rel="stylesheet" href="style_home.css">
     <!--===============================================================================================-->
 
     <title><?php echo $fetch_info['name'] ?> | Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="../_css/Style_SeOS.css" > -->
 
-    <link rel="stylesheet" href="style_home.css">
+
 </head>
 
 <body>
@@ -77,7 +78,7 @@ if ($email != false && $password != false) {
                 <a href="list_OS.php" class="link"><img class="image-size" src="../_images/os.jpeg" alt="Avatar man" class="link">
                     <h3>Get OS</h3>
                 </a>
-            </div>  
+            </div>
         </div>
 
         <div class="column2">
