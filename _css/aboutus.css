@@ -1,0 +1,50 @@
+h1 {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+}
+
+strong {
+    font-style: italic;
+}
+
+p {
+    text-align: justify;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 20px;
+
+}
+
+.container {
+    /* margin-top: 10px; */
+    padding: 10px;
+}
+
+.project-details {
+    background-color: azure;
+    border-radius: 25px;
+}
+
+.person-details {
+    padding: 10px 20px;
+
+}
+
+.person {
+    background-color: lightcyan;
+    float: left;
+    width: 100%;
+}
+
+.person img {
+    width: 200px;
+    margin: 8px 5px;
+    padding: 5px;
+}
+
+.person p {
+    float: right;
+
+}

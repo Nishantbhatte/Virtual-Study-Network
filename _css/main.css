@@ -491,7 +491,7 @@ th {
 }
 
 
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+/* Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {
 
@@ -510,11 +510,11 @@ th {
     }
 
     a[href]:after {
-        content: " ("attr(href) ")"
+        content: attr(href);
     }
 
     abbr[title]:after {
-        content: " ("attr(title) ")"
+        content: attr(title);
     }
 
     a[href^="#"]:after,
@@ -16674,7 +16674,7 @@ nav.web-topbar>div nav>ul>li,
 nav.web-topbar>div nav>ul>li>a.menu-item {
     height: 60px;
     color: #000000;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 nav.web-topbar .topbar-left-container li {
@@ -16695,12 +16695,13 @@ nav.web-topbar .topbar-right-container li {
     nav.web-topbar .topbar-right-container li {
         float: right
     }
+
 }
 
 @media screen and (max-width:871px) {
     nav.web-topbar .topbar-left-container a.menu-item {
         font-size: 13px;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     nav.web-topbar .topbar-right-container li {
@@ -16710,15 +16711,34 @@ nav.web-topbar .topbar-right-container li {
     nav.web-topbar>div nav>ul>li a.logo-item {
         font-size: 25px;
         padding: 0 10px;
+
     }
 
     nav.web-topbar>div nav>ul>li a.logo-item img {
-        /* margin-top: 5px; */
-        padding-top: 1.5px;
-        padding-bottom: 1.5px;
-
+        max-height: 90%;
+        margin-bottom: 5px;
     }
 }
+
+@media screen and (min-width:1080px) {
+
+    nav.web-topbar .topbar-left-container a.menu-item {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    nav.web-topbar>div nav>ul>li a.logo-item {
+        font-size: 25px;
+        padding: 0 20px;
+
+    }
+
+    nav.web-topbar>div nav>ul>li a.logo-item img {
+        max-height: 90%;
+        /* margin-bottom: 5px; */
+    }
+}
+
 
 nav.web-topbar>div nav>ul>li {
     display: inline-block
@@ -16737,13 +16757,12 @@ nav.web-topbar>div nav>ul>li a {
 nav.web-topbar>div nav>ul>li a.logo-item {
     font-size: 25px;
     border-radius: 20px;
-
 }
 
 nav.web-topbar>div nav>ul>li a.logo-item img {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    max-height: 90%;
     border-radius: 18px;
     border-style: solid;
     border-width: 2px;
@@ -16775,7 +16794,7 @@ nav.web-topbar>div nav>ul>li a.menu-item-highlight {
     padding: 14px 18px;
     border-radius: 20px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 10px;
     transition: .3s
 }
