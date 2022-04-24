@@ -22,10 +22,12 @@ if ($email != false && $password != false) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="title" content="VSN | Virtual  Study  Network">
     <meta name="description" content="Get  Your  Own  Virtual  Instance as per your Requirement">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,49 +38,121 @@ if ($email != false && $password != false) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="../_images/_icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../_vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../_fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../_vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../_vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../_vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../_css/util.css">
-    <link rel="stylesheet" type="text/css" href="../_css/main.css">
-    <link rel="stylesheet" type="text/css" href="../_css/login.css">
-    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="../_css/listOSstyle.css">
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <a class="menu-item logo-item" href="../index.html">
-            <picture>
-                <source type="image/png" srcset="../_images/VSN Logo.jpeg">
-                <source type="gif" srcset="../_images/VSN Logo.jpeg">
-                <img src="../_images/VSN Logo.jpeg" alt="Virtual Study Network">
-            </picture>
-        </a>
-        <!-- <a class="navbar-brand" href="#">Brand name</a> -->
-        <div class="login-name">
-            <h1>Welcome <?php echo $fetch_info['name'] ?></h1>
+
+    <!-- Header Starts Here-->
+    <div class="topbar-shim">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFV46RC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <nav class="web-topbar">
+            <nav class="navbar" style="height: 60px;">
+                <a class="menu-item logo-item" href="../index.html">
+                    <picture>
+                        <!-- <source type="image/png" srcset="../_images/VSN Logo.jpeg">
+                            <source type="gif" srcset="../_images/VSN Logo.jpeg"> -->
+                        <img src="../_images/VSN Logo.jpeg" alt="Virtual Study Network">
+                    </picture>
+                </a>
+                <div class="login-name">
+                    <h1>Welcome <?php echo $fetch_info['name'] ?> </h1>
+                </div>
+                <button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
+            </nav>
+        </nav>
+    </div>
+    <!-- Header Part Ends Here -->
+
+    <section class="product-list ">
+        <div class="product-container">
+
+            <!--       First Product -->
+            <div class="card">
+                <div class="content">
+                    <!-- <div class="title">Ubuntu</div> -->
+                    <div class="image">
+                        <img src="../_images/os_photos/ubuntu.jpeg" />
+                    </div>
+                </div>
+                <a href="instance.php">
+                    <button class="buy-button details">
+                        Start
+                    </button></a>
+            </div>
+            <!-- Second Product -->
+            <div class="card">
+                <!-- <div class="title">Kali Linux</div> -->
+                <div class="image">
+                    <img src="../_images/os_photos/kali.jpeg" />
+                </div>
+
+                <a href="instance.php">
+                    <button class="buy-button details">
+                        Start
+                    </button></a>
+            </div>
+            <!--       Third Product -->
+            <div class="card">
+                <!-- <div class="title">FreeBSD</div> -->
+                <div class="image">
+                    <img src="../_images/os_photos/redhat.jpeg" />
+                </div>
+                <a href="instance.php">
+                    <button class="buy-button details">
+                        Start
+                    </button></a>
+            </div>
+            <!--       Fourth Product -->
+            <div class="card">
+                <!-- <div class="title">BOSS</div> -->
+                <div class="image">
+                    <img src="../_images/os_photos/centos.jpeg" />
+                </div>
+                <!-- <div class="text"> </div> -->
+                <a href="instance.php">
+                    <button class="buy-button details">
+                        Start
+                    </button></a>
+
+
+            </div>
+            <!--       Fifth Product -->
+            <div class="card">
+                <!-- <div class="title">BOSS</div> -->
+                <div class="image">
+                    <img src="../_images/os_photos/parrot.jpeg" />
+                </div>
+                <!-- <div class="text"></div> -->
+
+                <a href="instance.php">
+                    <button class="buy-button details">
+                        Start
+                    </button></a>
+
+            </div>
+            <!--       Sixth Product -->
+            <div class="card">
+                <!-- <div class="title">BOSS</div> -->
+                <div class="image">
+                    <img src="../_images/os_photos/fedora.jpeg" />
+                </div>
+                <a href="instance.php">
+                    <button class="buy-button details">
+                        Start
+                    </button></a>
+            </div>
         </div>
-        <button type="button" class="btn btn-light"><a href="logout-user.php">Logout</a></button>
-    </nav>
-    <ol class="list-color">
-        <li class=""><a href="http://localhost:8888/?Connect-to-Windows-instance" target="_blank"> Windows</a></li>
-        <li class=""><a href="http://localhost:8888/?Ubuntu-Instance" target="_blank">Ubuntu</a></li>
-        <li class=""><a href="http://localhost:8888" target="_blank">RedHat</a></li>
-        <li class=""><a href="http://localhost:8888" target="_blank">SUSE Linux</a></li>
-        <li class=""><a href="http://localhost:8888" target="_blank">Fedora</a></li>
-        <li class=""><a href="http://localhost:8888" target="_blank">Kali</a></li>
-        <li class=""><a href="http://localhost:8888" target="_blank">Parrot</a></li>
-        <li class=""><a href="http://localhost:8888" target="_blank">CentOS</a></li>
-    </ol>
+
+
+
+    </section>
+
     <!--Footer Starts Here-->
     <footer class="web-footer">
         <div class="wrapper-container-lg footer-content-container">

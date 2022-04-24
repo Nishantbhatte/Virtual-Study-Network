@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 nav {
     padding-left: 100px !important;
     padding-right: 100px !important;
@@ -42,8 +43,9 @@ a.menu-item {
 
 .login-name h1 {
     text-align: center;
-    color: #E9E4E0;
+    color: black;
     font-style: bold;
+    display: inline;
 }
 
 
