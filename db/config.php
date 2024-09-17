@@ -11,6 +11,6 @@ if (!$conn) {
     die("<script>alert('Connection Failed.')</script>");
 }
 
-$base_url = "http://localhost/VSN/docstore.php"; // Website url
+$base_url = "http://localhost//VSN/docstore.php"; // Website url
 
 ?>

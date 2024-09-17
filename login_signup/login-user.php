@@ -1,30 +1,43 @@
 <?php require_once "controllerUserData.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Login Form</title>
+    <meta name="title" content="VSN | Virtual  Study  Network">
+    <meta name="description" content="Get  Your  Own  Virtual  Instance as per your Requirement">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Virtual Lab, Virtaul Machines, E-learning, 
+            online computer, browser virtual machine, Aws, Amazon Virtual Images, Operating System,
+            Operating System Images, web app, application, web development, app development, code, create Instance,
+            access online Operating System, designer, developer, tool, software, javascript, frontend, UI, design, scaffolding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="../_images/_icons/favicon.ico" />
+    <title>Login-in to Virtual Study Network</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
                 <form action="login-user.php" method="POST" autocomplete="">
-                    <h2 class="text-center">Login Form</h2>
-                    <p class="text-center">Login with your email and password.</p>
+                    <h2 class="text-center">Login</h2>
+                    <p class="text-center">Login with your email and password</p>
                     <?php
-                    if(count($errors) > 0){
-                        ?>
+                    if (count($errors) > 0) {
+                    ?>
                         <div class="alert alert-danger text-center">
                             <?php
-                            foreach($errors as $showerror){
+                            foreach ($errors as $showerror) {
                                 echo $showerror;
                             }
                             ?>
                         </div>
-                        <?php
+                    <?php
                     }
                     ?>
                     <div class="form-group">
@@ -42,6 +55,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>

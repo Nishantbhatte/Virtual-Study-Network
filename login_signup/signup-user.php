@@ -1,42 +1,57 @@
 <?php require_once "controllerUserData.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Signup Form</title>
+    <meta name="title" content="VSN | Virtual  Study  Network">
+    <meta name="description" content="Get  Your  Own  Virtual  Instance as per your Requirement">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Virtual Lab, Virtaul Machines, E-learning, 
+            online computer, browser virtual machine, Aws, Amazon Virtual Images, Operating System,
+            Operating System Images, web app, application, web development, app development, code, create Instance,
+            access online Operating System, designer, developer, tool, software, javascript, frontend, UI, design, scaffolding">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title ICON -->
+    <link rel="icon" type="image/png" href="_images/_icons/favicon.ico" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <title>Signup Form</title>
+
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form">
                 <form action="signup-user.php" method="POST" autocomplete="">
-                    <h2 class="text-center">Signup Form</h2>
+                    <h2 class="text-center">Signup</h2>
                     <p class="text-center">It's quick and easy.</p>
                     <?php
-                    if(count($errors) == 1){
-                        ?>
+                    if (count($errors) == 1) {
+                    ?>
                         <div class="alert alert-danger text-center">
                             <?php
-                            foreach($errors as $showerror){
+                            foreach ($errors as $showerror) {
                                 echo $showerror;
                             }
                             ?>
                         </div>
-                        <?php
-                    }elseif(count($errors) > 1){
-                        ?>
+                    <?php
+                    } elseif (count($errors) > 1) {
+                    ?>
                         <div class="alert alert-danger">
                             <?php
-                            foreach($errors as $showerror){
-                                ?>
+                            foreach ($errors as $showerror) {
+                            ?>
                                 <li><?php echo $showerror; ?></li>
-                                <?php
+                            <?php
                             }
                             ?>
                         </div>
-                        <?php
+                    <?php
                     }
                     ?>
                     <div class="form-group">
@@ -59,6 +74,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>

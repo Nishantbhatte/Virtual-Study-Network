@@ -6,122 +6,163 @@
     <meta name="title" content="VSN | Virtual  Study  Network">
     <meta name="description" content="Get  Your  Own  Virtual  Instance as per your Requirement">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Virtual Lab, Virtaul Machines, E-learning, 
-        online computer, browser virtual machine, Aws, Amazon Virtual Images, Operating System,
-        Operating System Images, web app, application, web development, app development, code, create Instance,
-        access online Operating System, designer, developer, tool, software, javascript, frontend, UI, design, scaffolding">
+    <meta name="keywords" content="Virtual Lab, Virtaul Machines, E-learning, online computer, browser virtual machine,
+        Aws, Amazon Virtual Images, Operating System, Operating System Images, web app, application,
+        web development, app development, code, create Instance, access online Operating System, designer,
+        developer, tool, software, javascript, frontend, UI, design, scaffolding">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
+
+    <!-- Title ICON -->
     <link rel="icon" type="image/png" href="_images/_icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="_css/util.css">
-    <link rel="stylesheet" type="text/css" href="_css/main.css">
-    <link rel="stylesheet" type="text/css" href="_css/login.css">
-    <!--===============================================================================================-->
+
+    <!-- Importing All Stylesheet from One File -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Javascript file for Closing and Opening Burger menu  -->
+    <script type="module" src="js/main.js"></script>
+
     <title> About Us</title>
+
 </head>
+
 <body>
+    <!--Header Starts Here-->
+    <div class="topbar-shim">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFV46RC" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-<!--Header Starts Here-->
-<div class="topbar-shim">
+        <nav class="web-topbar">
+            <div class="topbar-wrapper">
+                <nav class="topbar-left-container col-xs-4 col-sm-9 ">
+                    <ul>
+                        <li>
+                            <!--Logo Part-->
+                            <a class="menu-item logo-item" href="index.html">
+                                <picture>
+                                    <img src="_images/VSN Logo.jpeg" alt="Virtual Study Network">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="howitworks.html">HOW IT WORKS?</a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="aboutus.html">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a class="hidden-xs menu-item" href="contactus.html">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFV46RC" height="0" width="0"
-                    style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <nav class="web-topbar">
-        <!-- views/partials/website_header.ejs -->
-        <div class="topbar-wrapper">
-            <nav class="topbar-left-container col-xs-4 col-sm-9 ">
-                <ul>
-                    <li>
-                        <!--Logo Part-->
-                        <a class="menu-item logo-item" href="index.html">
-                            <picture>
-                                <source type="image/png" srcset="/images/VSN Logo.gif">
-                                <source type="gif" srcset="/images/VSN Logo.gif">
-                                <img src="_images/VSN Logo.jpeg" alt="Virtual Study Network">
-                            </picture>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="hidden-xs menu-item" href="index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a class="hidden-xs menu-item" href="howitworks.html">HOW IT WORKS?</a>
-                    </li>
-                    <li>
-                        <a class="hidden-xs menu-item" href="aboutus.html">ABOUT US</a>
-                    </li>
-                    <li>
-                        <a class="hidden-xs menu-item" href="contactus.html">CONTACT US</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="topbar-right-container hidden-xs col-xs-8 col-sm-3 full-screen-menu-nav">
-                <ul>
-                    <li>
-                        <a id="topbar-signup" class="menu-item-highlight" href="login_signup/signup-user.php">SIGN UP</a>
-                    </li>
-                    <li>
-                        <a id="topbar-login" class="menu-item-highlight" href="login_signup/login-user.php">LOGIN</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="menu-mobile hidden-sm hidden-md hidden-lg is--open">
-
-                <!-- Mobile Menu Open Hide Button -->
-                <span id="burger-menu-hook" class="burger-menu-container">
-                    <img src="https://tako.assets.yotako.io/images/website/icons/icon-burger-menu.png" alt="Menu">
-                </span>
-                <div class="wrapper-menu-container">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a id="topbar-mobile-signup" class="menu-item-highlight" href="login_signup/signup-user.php">SIGN UP</a>
-                            </li>
-                            <li>
-                                <a id="topbar-mobile-login" class="menu-item-highlight" href="login_signup/login-user.php">LOGIN</a>
-                            </li>
-                            <li>
-                                <a class="menu-item" href="/index.html">HOME</a>
-                            </li>
-                            <li>
-                                <a class="menu-item" href="/howitworks.html">HOW IT WORKS?</a>
-                            </li>
-                            <li>
-                                <a class="menu-item" href="/aboutus.html">ABOUT US</a>
-                            </li>
-                            <li>
-                                <a class="menu-item" href="/contactus.html">CONTACT US</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <nav class="topbar-right-container hidden-xs col-xs-8 col-sm-3 full-screen-menu-nav">
+                    <ul>
+                        <li>
+                            <a id="topbar-signup" class="menu-item-highlight" href="login_signup/signup-user.php">SIGN
+                                UP</a>
+                        </li>
+                        <li>
+                            <a id="topbar-login" class="menu-item-highlight"
+                                href="login_signup/login-user.php">LOGIN</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Mobile Navigation Part -->
+                <div class="menu-mobile hidden-sm hidden-md hidden-lg">
+                    <!-- Mobile Menu Open Hide Button -->
+                    <span id="burger-menu-hook" class="burger-menu-container">
+                        <img src="_images/icon-burger-menu.png" alt="Menu">
+                    </span>
+                    <div class="wrapper-menu-container">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a id="topbar-mobile-signup" class="menu-item-highlight"
+                                        href="login_signup/signup-user.php">SIGN UP</a>
+                                </li>
+                                <li>
+                                    <a id="topbar-mobile-login" class="menu-item-highlight"
+                                        href="login_signup/login-user.php">Login</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="/index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="/howitworks.html">How it Works?</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="/aboutus.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="menu-item" href="/contactus.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</div>
-<!-- Header Part Ends Here-->
-<div>
-    <section>
-        <h1>Project Details</h1>
-    </section>
-</div>
+        </nav>
+    </div>
+    <!-- Header Part Ends Here-->
 
-<!--Footer Starts Here-->
+    <!-- About Section Starts here -->
+    <div style="background-color: turquoise;">
+        <section class="container">
+            <div class="project-details">
+                <h1> About Project </h1>
+                <br>
+                <p> The proposed <strong> VIRTUAL STUDY NETWORK </strong> system will provide a platform for
+                    users to obtain a virtual machine from a cloud provider such as aws or google, as well as necessary
+                    resources such as application files and virtual operating system images, allowing them to perform
+                    all tasks. If the user wishes to study or work, they will require a machine with appropriate
+                    specifications and internet access. As a result, the user will receive a virtual operating system
+                    image, as well as various apps, software, and other items required for their task. All they have to
+                    do now is select the operating systems and start to work. The HTML5, CSS3, and JavaScript/PHP
+                    programming languages will be used to develop the Platform.</p>
+
+                <p> To access this, A user simply needs a laptop or tablet with the bare minimum of specs and a browser
+                    loaded to access this platform. The user only needs to sign in to the system to gain access to the
+                    resources, after which they can perform their work using the different virtual operating system
+                    types. It will also include capabilities such as secure cloud document storage and an online text
+                    editor. It will be used for development, testing, and production, and it will be accessible from
+                    anywhere. It doesn't require any software to be installed on the local computer; all it requires is
+                    a device and a reliable internet connection.</p>
+
+                <p> Main Goal of this project is to provide a sufficient resource to users who does not have required
+                    resources to perform their task. By implementing this project, it will minimize the requirements of
+                    the hardware which will eventually minimize the cost of hardware required. Users can perform their
+                    task from different types of devices like tablet, any other device which has an interface.
+                </p>
+            </div>
+            <!-- Project Developer's Details -->
+
+            <!-- <div class="person-details">
+                <div class="person">
+                    <img src="_images/_img/person1.jpg" alt="Shreekunj's Profile picture" style="float: left;">
+                    <p> Pursuing My Backelor's of Enginnering in Information Technology from Xavier Institute of
+                        Engineering </p>
+                </div>
+                <div class="person">
+                    <img src="_images/_img/person1.jpg" alt="Nishant's Profile picture" style="float: left;">
+                    <p> Pursuing My Backelor's of Enginnering in Information Technology from Xavier Institute of
+                        Engineering </p>
+                </div>
+                <div class="person">
+                    <img src="_images/_img/person1.jpg" alt="Vivek's Profile picture" style="float: left;">
+                    <p> Pursuing My Backelor's of Enginnering in Information Technology from Xavier Institute of
+                        Engineering </p>
+                </div>
+            </div> -->
+        </section>
+    </div>
+    <!-- About Section Ends here -->
+
+    <!--Footer Starts Here-->
     <footer class="web-footer">
         <div class="wrapper-container-lg footer-content-container">
             <div class="menu-section">
@@ -130,17 +171,19 @@
                     <li>
                         <ul class="social-container">
                             <li>
-                                <a id="twitter-footer-icon" target="_blank" href="https://twitter.com/yotako_io">
+                                <a id="twitter-footer-icon" target="_blank" href="https://twitter.com/Shrekunjvaria">
                                     <i class="fa fa-twitter-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a id="facebook-footer-icon" target="_blank" href="https://www.facebook.com/shreekunj.variya/">
+                                <a id="facebook-footer-icon" target="_blank"
+                                    href="https://www.facebook.com/shreekunj.variya/">
                                     <i class="fa fa-facebook-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a id="linkedin-footer-icon" target="_blank" href="https://www.linkedin.com/in/shreekunj-varia/">
+                                <a id="linkedin-footer-icon" target="_blank"
+                                    href="https://www.linkedin.com/in/shreekunj-varia/">
                                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -172,4 +215,5 @@
     </footer>
     <!-- Footer Ends Here-->
 </body>
+
 </html>

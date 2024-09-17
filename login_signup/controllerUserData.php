@@ -17,7 +17,7 @@ if(isset($_POST['signup'])){
     $email_check = "SELECT * FROM usertable WHERE email = '$email'";
     $res = mysqli_query($con, $email_check);
     if(mysqli_num_rows($res) > 0){
-        $errors['email'] = "Email that you have entered is already exist!";
+        $errors['email'] = "Email that you have entered is already exists!";
     }
     if(count($errors) === 0){
         $encpass = password_hash($password, PASSWORD_BCRYPT);
